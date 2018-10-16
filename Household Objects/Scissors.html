@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Scissors</title>
+	<style>
+	.line{
+		position:absolute;
+		height:4px;
+		width:86px;
+		background-color: white;
+		top:350px;
+		left:192px;
+		transform:rotate(66deg);
+	}
+	.line2{
+		position:absolute;
+		transform:rotate(84deg);
+		height:4px;
+		width:260px;
+		background-color: white;
+		top:526px;
+		left:76px;
+	}
+	.handle-detail{
+		position:absolute;
+		height:50px;
+		width:30px;
+		left:182px;
+		top:70px;
+		background-color:black;
+		transform:rotate(25deg);
+		border-radius:50%;
+	}
+	.handle-detail::before{
+		content:"";
+		position:absolute;
+		height:50px;
+		width:30px;
+		left:45px;
+		top:-22px;
+		background-color:black;
+		transform:rotate(-45deg);
+		border-radius:50%;
+
+	}
+	.screw{
+		height: 30px;
+		width: 30px;
+		background-color:black;
+		position:absolute;
+		border-radius:50px;
+		top:400px;
+		left:205px;
+		box-shadow:
+			0px 0px 0 2px white,
+			inset -9px 0px 0px 0 white;
+		}
+
+			.handle-hole{
+			position:absolute;
+			background-color:white;
+			width:120px;
+			height:150px;
+			left:48px;
+			top:35px;
+			border-radius: 50%/50%;
+			z-index:1;
+			}
+			.handle-hole::before{
+			content:"";
+			position:absolute;
+			background-color:white;
+			width:120px;
+			height:150px;
+			left:225px;
+			top:0px;
+			border-radius: 50%/50%;
+			z-index:1;
+			}
+	.handle{
+		position:absolute;
+		background-color:black;
+		width: 200px;
+		height: 200px;
+		border-radius: 80% 5% 55% 50% / 55% 5% 80% 50%;
+		transform: rotate(135deg);
+		z-index:0;
+	}
+	.handle::after{
+		content:"";
+		position:absolute;
+		background-color:black;
+		width: 200px;
+		height: 200px;
+		border-radius: 80% 5% 55% 50% / 55% 5% 80% 50%;
+		left:-160px;
+		top:-160px;
+	}
+				.handle2{
+				position:absolute;
+				background-color:white;
+				top:12px;
+				width: 200px;
+				height: 200px;
+				border-radius: 80% 5% 55% 50% / 55% 5% 80% 50%;
+				transform: rotate(135deg);
+				z-index:-2;
+			}
+				.handle2::after{
+				content:"";
+				position:absolute;
+				background-color:white;
+				width: 200px;
+				height: 200px;
+				border-radius: 80% 5% 55% 50% / 55% 5% 80% 50%;
+				left:-160px;
+				top:-160px;
+			}
+
+	.blade-background{
+		position:absolute;
+		z-index:-3;
+		left:45px;
+		top:100px;
+		width:50px;
+		height:0;
+		border-left: 150px solid transparent;
+		border-right: 150px solid transparent;
+		border-top: 300px solid black;
+	}
+
+		.negative-space1{
+			position:absolute;
+			top:25px;
+			left:222px;
+			background-color:white;
+			width: 30px;
+			height: 300px;
+			border-radius: 100% / 50%;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			z-index: -1;
+			}
+			.negative-space1:before{
+				content:"";
+				position:absolute;
+				background-color:white;
+				width: 30px;
+				height: 300px;
+				left:-30px;
+				border-radius: 100% / 50%;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+				z-index: -1;
+			}
+			.blade{
+				position:absolute;
+				top:280px;
+				left:222px;
+				background-color:black;
+				width: 30px;
+				height: 370px;
+				border-radius: 100% / 50%;
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+				z-index: -2
+			}
+			.blade:before{
+				content:"";
+				position:absolute;
+				top:0px;
+				left:-30px;
+				background-color:black;
+				width: 30px;
+				height: 370px;
+				border-radius: 100% / 50%;
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+	</style>
+	</head>
+	<body>
+		<div class="screw"></div>
+		<div class="handle"></div>
+		<div class="handle2"></div>
+
+		<div class="handle-hole"></div>
+
+		<div class="blade-background"></div>
+		<div class="white-block"></div>
+		<div class="negative-space1"></div>
+		<div class="blade"></div>
+		<div class="line"></div>
+		<div class="line2"></div>
+		<div class="handle-detail"></div>
+	</body>
+
+
+</html>

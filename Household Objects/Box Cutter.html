@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+	<head>
+	<title>Box Cutter</title>
+
+		<style>
+
+			.button{
+			position:absolute;
+			top:246px;
+			left:51px;
+			height:60px;
+			width:20px;
+			border-radius:10%;
+			background-color:white;
+			z-index: 30;
+			box-shadow:
+				0 0 0 4px black;
+			}
+			.button:before{
+			content:"";
+			position:absolute;
+			top:100px;
+			left:0px;
+			height:30px;
+			width:20px;
+			border-radius:10%;
+			background-color:white;
+			z-index: 30;
+			box-shadow:
+				0 0 0 4px black;
+			}
+			.button-detail{
+				top:249px;
+				left:53.5px;
+				width:15px;
+				height:4px;
+				background-color:black;
+				position:absolute;
+				z-index: 31;
+				box-shadow:
+					0 10px 0 0 black,
+					0 20px 0 0 black,
+					0 30px 0 0 black,
+					0 40px 0 0 black,
+					0 50px 0 0 black,
+
+					0 100px 0 0 black,
+					0 110px 0 0 black,
+					0 120px 0 0 black;
+
+			}
+			.handle{
+			position:absolute;
+			top:-33px;
+			width: 100px;
+			height: 100px;
+			background-color:white;
+			z-index:5;
+			}
+		.handle::before{
+			content:"";
+			position:absolute;
+			top:50px;
+			left:0px;
+			width: 100px;
+			height: 80px;
+			transform:skewY(-15deg);
+			border-radius:20px 20px 0px 0px;
+			background-color:black;
+			z-index:6;
+		}
+		.handle::after{
+			content:"";
+			position:absolute;
+			top:130px;
+			width: 100px;
+			height: 3px;
+			background-color:white;
+			z-index:8;
+			box-shadow:
+				0 -5px 0 0 black,
+				0 -3px 0 0 black;
+		}
+
+		.handle-hole{
+			position:absolute;
+			z-index:7;
+			height:25px;
+			width:60px;
+			background-color:white;
+			top:45px;
+			left:30px;
+			transform:skewY(-15deg);
+			border-radius:40px;
+		}
+
+		.body
+		{
+		position:absolute;
+		width:100px;
+		height:600px;
+		background-color:black;
+		}
+
+		.body::before /*interior details*/{
+		content: "";
+		top:80px;
+		left:37px;
+		position:absolute;
+		width:32px;
+		height:480px;
+		border-radius:5px;
+		background-color:white;
+		z-index:3;
+	/*	box-shadow:-4px 4px 0 white;*/
+		}	
+			.detail1{
+				position:absolute;
+				z-index:6;
+				top:90px;
+				left:48px;
+				height:150px;
+				width:26px;
+				background-color:black;
+			}
+			.detail1::before{
+				content:"";
+				position:absolute;
+				z-index:6;
+				top:313px;
+				height:162px;
+				width:26px;
+				background-color:black;
+			}
+		.interior-details{
+		width:15px;
+		height:20px;
+		border-radius:3px;
+		background-color: white;
+		position:absolute;
+		z-index:4;
+		top:200px;
+		left:34px;
+		box-shadow:
+			0 40px 0 0 white,
+			0 80px 0 0 white,
+			0 120px 0 0 white,
+			0 160px 0 0 white,
+			0 200px 0 0 white,
+			0 240px 0 0 white,
+			0 280px 0 0 white;
+		}
+			.interior-details::before{
+				content:"";
+				position:absolute;
+				top:3px;
+				left:4px;
+				width:10px;
+				height:15px;
+				background-color:black;
+				z-index:5;
+				box-shadow:
+					0 200px 0 0 black,
+					0 240px 0 0 black,
+					0 280px 0 0 black;
+			}
+			.bottom-detail{
+			position:absolute;
+			top:608px;
+			width: 0;
+			height: 0;
+			border-top: 40px solid black;
+			border-left: 70px solid transparent;
+			}
+			.bottom-detail2{
+			position:absolute;
+			top:588px;
+			left:48px;
+			border-bottom: 30px solid black;
+			border-left: 15px solid transparent;
+			border-right: 25px solid transparent;
+			height: 0;
+			width: 50px;
+			transform:rotate(90deg);
+			}
+			.blade-shadow1{
+					position:absolute;
+					top:612px;
+					width: 0;
+					height: 0;
+					border-top: 40px solid white;
+					border-left: 70px solid transparent;
+					z-index:-1;
+			}
+			.blade-shadow2{
+					position:absolute;
+					top:592px;
+					left:48px;
+					border-bottom: 30px solid white;
+					border-left: 15px solid transparent;
+					border-right: 25px solid transparent;
+					height: 0;
+					width: 50px;
+					transform:rotate(90deg);
+					z-index:-1;
+			}
+/*				.blade-shadow
+				{
+				position:absolute;
+				top:600px;
+
+				width:60px;
+				height:0px;
+				border-left: 50px solid transparent;
+				border-right: 50px solid transparent;
+				border-top: 100px solid red;
+				opacity:0.5;
+				z-index: 6;
+				}*/
+
+			.blade{
+			position:absolute;
+			top:580px;
+			left:25px;
+			width: 70px;
+			height: 100px;
+			transform:skewY(25deg);
+			background:black;
+			z-index: -100;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="body"></div>
+		<div class="bottom-detail"></div>
+		<div class="bottom-detail2"></div>
+				<div class="blade-shadow1"></div>
+				<div class="blade-shadow2"></div>
+
+		<div class="blade"></div>
+		<div class="interior-details"></div>
+
+		<div class="detail1"></div>
+		<div class="handle"></div>
+		<div class="handle-hole"></div>
+		<div class="button"></div>
+		<div class="button-detail"></div>
+
+
+	</body>
+
+
+</html>
