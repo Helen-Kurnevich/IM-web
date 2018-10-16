@@ -1,0 +1,176 @@
+/*@font-face {
+    font-family: FuturaStd-Book;
+    src: url("fonts/futurastd-book.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FuturaStd-Light;
+    src: url("fonts/futurastd-light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BerlinGrotesk-Bold;
+    src: url("fonts/berlingrotesk-bold.otf") format("opentype");
+}
+@font-face {
+    font-family: BerlinGrotesk-Regular;
+    src: url("fonts/berlingrotesk-regular.otf") format("opentype");
+}
+*/
+
+body{
+	color:white;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6a63b7+0,0c2d5b+0,210735+37,000000+100 */
+	background: #6a63b7; /* Old browsers */
+	background: -moz-linear-gradient(top, #6a63b7 0%, #0c2d5b 0%, #210735 37%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #6a63b7 0%,#0c2d5b 0%,#210735 37%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #6a63b7 0%,#0c2d5b 0%,#210735 37%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a63b7', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+	margin-left:60px;
+}
+
+.Mountains{
+	position:absolute;
+	z-index:-2;
+	width:100%;
+	margin:0px;
+	top:-200px;
+	left:0px;
+	opacity:80%;
+}
+.cloud{
+	position:sticky;
+	top:200px;
+	z-index:-2;
+	width:700px;
+	left:300px;
+	transform:rotate(180deg);
+}
+.cloud:after{
+	content: "";
+	position:sticky;
+	top:400px;
+	width:400px;
+	left:600px;
+	transform:rotate(180deg);
+;
+}
+
+/*Date and Time*/
+h5{
+	font-size:30px;
+	line-height:0px;
+	font-family: fira-sans-2, sans-serif;
+	font-weight: 350;
+	font-style: normal;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-50px;
+	max-width:900px;
+	letter-spacing:1px;
+
+	color:#878787;
+}
+.Place{
+	font-size:18px;
+	font-family: fira-sans-2, sans-serif;
+	font-weight: 350;
+	font-style: normal;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-10px;
+	max-width:900px;
+}
+
+/*Main Title*/
+h1{ 
+	position:relative;
+	text-transform: uppercase;
+	font-family: fira-sans-2, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size:60px;
+	line-height: 0px;
+	letter-spacing:2px;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:610px;
+} 
+
+.Part1{
+	padding-top:80px;
+	margin-left:auto;
+	color:#878787;
+	letter-spacing:5px;
+}
+.Part2{ /*"After"*/
+	font-size:200px;
+	line-height:20px;
+	letter-spacing:5px;
+	margin-left:auto;
+	color:#ff4242;
+}
+
+.Part3{
+	padding-bottom:200px;
+	margin-left:auto;
+	letter-spacing:5px;
+	color:#878787;
+}
+/*---*/
+
+/*.Line{
+	position:absolute;
+	z-index:4;
+	height:1px;
+	width:580px;
+	background-color:red;
+	top:350px;
+	left:-200px;
+}*/
+
+h2,h3,p,h4{
+	max-width:600px;
+
+	font-family: fira-sans-2, sans-serif;
+	font-weight: 350;
+	font-style: normal;
+	color:#878787;
+}
+
+h2,h3,h4,p{
+	margin-left:auto;
+	margin-right:auto;
+
+	font-family: fira-sans-2, sans-serif;
+	font-weight: 350;
+	font-style: normal;
+}
+
+/*Link Styles*/
+a{
+	color:#E16464;
+	text-decoration:none;
+}
+
+h2{
+	font-size:30px;
+}
+h4{
+	font-size:28px;
+	line-height:0px;
+	padding-right:80px;
+}
+
+p{
+    font-size:18px;
+}
+
+span{
+	color:#E16464;
+}
+footer{
+	height:200px;
+	width:100%;
+}
